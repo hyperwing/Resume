@@ -1,14 +1,15 @@
 % LaTeX file for resume 
 % This file uses the resume document class (res.cls)
 \documentclass[]{res} 
+%\renewcommand{\sectionfont}{\small}
 \usepackage{multicol}
 
 %\usepackage{helvetica} % uses helvetica postscript font (download helvetica.sty)
 %\usepackage{newcent}   % uses new century schoolbook postscript font 
 \newsectionwidth{0pt}  % So the text is not indented under section headings
 \setlength{\textheight}{10in} % set text height big enough for box
-\topmargin=-.6in       % to start box .5in from top of page
-\oddsidemargin=-.5in   % to start box .5in from left of page
+\topmargin=-.8in       % to start box .5in from top of page
+\oddsidemargin=-.8in   % to start box .5in from left of page
 
 
 
@@ -25,10 +26,10 @@
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	\newdimen\boxrulethickness\newdimen\boxaroundhmargin\newdimen\boxaroundvmargin
 	\boxrulethickness=.5pt        %controls thickness of line 
-	\boxaroundhmargin=25pt        % about a half inch
-	\boxaroundvmargin=20pt        % to fit more text on page, make this smaller
+	\boxaroundhmargin=.5in        % about a half inch
+	\boxaroundvmargin=5pt        % to fit more text on page, make this smaller
 	%%%%%%%%%%%%%%%%%%%%%%%%% Don't read this stuff %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	\hsize=7.5in% \vsize=10.5in             % use bigger dimensions for box
+	\hsize=7.8in \vsize=10.5in             % use bigger dimensions for box
 	\newbox\MACboxA  \newdimen\MACdimenA
 	% \borderandboxit is used inside \boxaround:
 	\def\borderandboxit#1#2#3{\vbox{\hrule height#2\hbox{\vrule width#2\hskip#1\hskip-#2%
@@ -52,15 +53,14 @@
 			\textbf{David A. Wing}\\ { \ \  wing.49@osu.edu\\ \ \ \ \ \ (614)327-6763\\github.com/hyperwing}
 		\end{multicols}
 			
-			\section{\sl  \textbf{Objective}}  % with postscript font \sl produces bold italic
-			%                           with default font (CM) \sl produces slanted type
-			A  full time developer position, with a company who can provide me a challenge and uses innovative new technology.
-			
-			\section{\sl  \textbf{Education}}
-			
-			St Charles Preparatory School\hfill graduated 2015\\			
+			\section{\sl  \textbf{Education}}			
 			The Ohio State University, B.S.,  Computer Science and Engineering, Honors and Scholars
 			\hfill expected 2020 
+
+			\section{\sl \textbf{Honors}}	
+			Dean's List for Engineering Students  \hfill 2016-2017 \\
+			Morril Excellence Scholarship   \hfill  2015-2020 \\
+			Engineering Dean's Scholarship  \hfill  2015 
 						
 			\section{\sl\textbf{Work Experience}}
 			
@@ -69,7 +69,7 @@
 			\end{ncolumn}\\
 			Technology Internship Program - ATM Division \\
 			{\textit{\footnotesize{Technologies Used: Python, C++, Wireshark, XFS-CEN API}}}\\
-			Reverse Engineered USB Drivers for ATMs and wrote custom USB drivers. Created a script to run API calls from XFS-CEN API. Collected USB packets using the script from the ATM with Wireshark. Then reverse engineered the USB signals to be able to run arbitrary code on the ATM and create custom drivers in Python. Finally wrote an automation testing framework for testing of all ATM hardware.
+			Reverse Engineered USB Drivers for ATMs and wrote custom USB drivers. Created a script to run API calls from XFS-CEN API. Collected USB packets using the script from the ATM with Wireshark. Reverse engineered the USB signals to be able to run arbitrary code on the ATM and create custom drivers in Python. Wrote an automation testing framework for testing of all ATM hardware.
 			
 			
 			\begin{ncolumn}{2}
@@ -77,14 +77,14 @@
 			\end{ncolumn}\\
 			Software Engineering Intern - Sub-billing Division\\
 			{\textit{\footnotesize{Technologies Used: Node.js, Python, Mocha, AWS, JavaScript}}}\\
-			Worked with back office transactions, creating internal tools in Node.js and Python to streamline account processing. The tool created transaction records and histories for accounts by combining and inferring existing data. Wrote a unit test suite in Mocha for all of my tools and resolved critical issues in existing AWS applications. In addition to working on production servers, led a team presenting a business case to the executives at the company involving the technical direction the company should pursue.
+			Worked with back office transactions, streamlining account processing by creating internal tools in Node.js and Python. Created transaction records and histories for accounts by combining and inferring existing data. Wrote a unit test suite in Mocha for all of my tools and resolved critical issues in existing AWS applications. Led a team presenting a technical business case on new LOBs to executives at Asurion.
 			
 			\begin{ncolumn}{2}
 			{\it Innovative Systems}, Pittsburgh, PA  & \hfill   5/17-8/17
 			\end{ncolumn}\\
 			Software Engineering Intern - R\&D Division \\
 			{\textit{\footnotesize{Technologies Used: Java, VB.Net, SQL Server, Oracle}}}\\
-			Created tools used in the daily deployment of database updates and migrations. Converted several stored procedures into a more extensible format. Learned industry software design practices and documentation. Envisioned and developed a cohesive product that is currently in production use. Using Visual Basic, SQL Server, Oracle and Java, the product took user instructions and ran through a complex procedure to transfer data.
+			Created tools used in the daily deployment of database updates and migrations. Converted several stored procedures into a more extensible format. Used industry software design practices and documentation. Envisioned and developed a cohesive product that is currently in production use. Using Visual Basic, SQL Server, Oracle and Java, the product took user instructions and ran through a complex procedure to transfer data.
 			
 			
 			\begin{ncolumn}{2} 
@@ -92,11 +92,10 @@
 			\end{ncolumn}\\
 			Student Information Technology Worker- Chemistry Department \\
 			{\textit{\footnotesize{Technologies Used: Powershell, Raspian, RedHat, Windows}}}\\
-			Worked with the tech department of the Chemistry department over the summer. Created deployment packages for software across the department. Created scripts in Powershell deployed for use for software automation across the department. Worked with RHEL as a system admin and OS deployment, and Raspian for hardware and software deployment.
+			Created deployment packages for software across the department. Created scripts in Powershell deployed for use for software automation across the department. Worked with RHEL as a system admin and OS deployment, and Raspian for hardware and software deployment.
 			
 
-			
-			\section{\sl  \textbf{Secondary Experience}}
+			\section{\sl  \textbf{Software Projects}}
 			
 			\textit{Inter-collegiate Programming Competition}\\
 			Competed in an algorithmic programming competition for college students. Represented Ohio State in the East Central Conference Event and placed in top half of participants.
@@ -107,44 +106,40 @@
 			\textit{FIRST Robotics Team - Programming Division}\\
 			Worked as the lead programmer on the varsity robotics team. Used LabVIEW to create code for a robot that utilized a variety of mechanisms, such as pneumatics, CIMs, and real time field tracking using the Kinect.
 			The team advanced to the highest stage of the competition, and performed in the top half of the participants.
-
-			\section{\sl \textbf{Honors}}	
-			Dean's List for Engineering Students  \hfill 2016-2017 \\
-			Morril Excellence Scholarship   \hfill  2015-2020 \\
-			Engineering Dean's Scholarship  \hfill  2015 \\
-			National Honor Society - Borromean Chapter \hfill  2014-2015 \\
-			STEM Exploration and Engagement Scholars \hfill  2015-2020 
-		
-	}
-		
-	\boxaround{ 
-		\section{\sl  \textbf{Side Projects}}
-
-		\textit{Unity3D Game Development}\\
-		{\textit{\footnotesize{Technologies Used: C\texttt{\#}, TypeScript}}}\\
+			
+			\textit{Unity3D Game Development}\\
+			{\textit{\footnotesize{Technologies Used: C\texttt{\#}, TypeScript}}}\\
 			Developed several Unity3D games for Android, Windows and Web Browsers. One game was a platform side scroller, featuring unlimited tile generation and score keeping along with various powerups, each influencing the run of play. Ended with limited release on the title.
 			
-		\textit{Raspberry Pi Automation}\\
-		{\textit{\footnotesize{Technologies Used: Python, Raspian, Java, Apache Server, Telegram}}}\\
-			Developed Raspberry Pi project for automating and controlling LED lights from a mobile device. The application invoked Python calls from a Java frontend, with an Apache server backend running the service.\\
-			Developed a Telegram messaging application. Using the Telegram API and python, the application would be triggered from a physical button press and send pictures to groups randomized from images sent to the bot. 
-			
-		\textit{Project Euler \& Kattis}\\
-			Practice algorithmic problem solving on sites such as Project Euler and Kattis. Programs are written for the best performance and space utilization on frequently completed problems. 
-			
-		\textit{Alexa Skills}\\
-		{\textit{\footnotesize{Technologies Used: TypeScript, Alexa, AWS}}}\\
-			Developed an Alexa skill to read, create, and automatically purchase ingredients for recipes at VolHacks 2018.
-			
-		\textit{Android Development}\\
+			\textit{Android Development}\\
 			{\textit{\footnotesize{Technologies Used: Android Studios, Java}}}\\
-			Developed an Android application for entertainment. The application plays music cues then allows the user to guess what song the cue is from. This was my first foray into native Android development.
-			
-		\textit{Audio Visual Technician}\\
-			Worked as an Audio Visual technician, in charge of maintaining, running and training other students to work on large events. 
-			
-		}
-	
+			Developed several native Android applications as proof of concept ideas, or as learning tools. Applications created for hackathons.
+
+	}
+		
+%	\boxaround{ 
+%		\section{\sl  \textbf{Side Projects}}
+%
+%
+%			
+%		\textit{Raspberry Pi Automation}\\
+%		{\textit{\footnotesize{Technologies Used: Python, Raspian, Java, Apache Server, Telegram}}}\\
+%			Developed Raspberry Pi project for automating and controlling LED lights from a mobile device. The application invoked Python calls from a Java frontend, with an Apache server backend running the service.\\
+%			Developed a Telegram messaging application. Using the Telegram API and python, the application would be triggered from a physical button press and send pictures to groups randomized from images sent to the bot. 
+%			
+%		\textit{Project Euler \& Kattis}\\
+%			Practice algorithmic problem solving on sites such as Project Euler and Kattis. Programs are written for the best performance and space utilization on frequently completed problems. 
+%			
+%		\textit{Alexa Skills}\\
+%		{\textit{\footnotesize{Technologies Used: TypeScript, Alexa, AWS}}}\\
+%			Developed an Alexa skill to read, create, and automatically purchase ingredients for recipes at VolHacks 2018.
+%			
+%
+%		\textit{Audio Visual Technician}\\
+%			Worked as an Audio Visual technician, in charge of maintaining, running and training other students to work on large events. 
+%			
+%		}
+%	
 
 		 %    end the material being boxed.
 \end{document}
