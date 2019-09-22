@@ -4,12 +4,16 @@
 %\renewcommand{\sectionfont}{\small}
 \usepackage{multicol}
 
+
 %\usepackage{helvetica} % uses helvetica postscript font (download helvetica.sty)
 %\usepackage{newcent}   % uses new century schoolbook postscript font 
 \newsectionwidth{0pt}  % So the text is not indented under section headings
 \setlength{\textheight}{10in} % set text height big enough for box
 \topmargin=-.8in       % to start box .5in from top of page
 \oddsidemargin=-.8in   % to start box .5in from left of page
+
+\setlength{\multicolsep}{3.0pt plus 2.0pt minus 2pt}% 50% of original values
+
 
 
 
@@ -50,17 +54,35 @@
 	\boxaround{ 
 	
 		\begin{multicols}{4}
-			\textbf{David A. Wing}\\ { \ \  wing.49@osu.edu\\ \ \ \ \ \ (614)327-6763\\github.com/hyperwing}
+			\textbf{David A. Wing}\\ \ \ \  wing.49@osu.edu\\ \ \ \ \ \ (614)327-6763\\github.com/hyperwing
+			\noindent
 		\end{multicols}
-			
+					
 			\section{\sl  \textbf{Education}}			
-			The Ohio State University, B.S.,  Computer Science and Engineering, Honors and Scholars
-			\hfill expected 2020 
+			The Ohio State University\\ 
+			B.S.,  Computer Science and Engineering, Honors and Scholars
+			\hfill expected July 2020 
 
 			\section{\sl \textbf{Honors}}	
-			Dean's List for Engineering Students  \hfill 2016-2017 \\
+			%Dean's List for Engineering Students  \hfill 2016-2017 \\
 			Morril Excellence Scholarship   \hfill  2015-2020 \\
 			Engineering Dean's Scholarship  \hfill  2015 
+			
+			\section{\sl  \textbf{Qualifications}}
+			\begin{multicols}{3}
+			Java\\
+			Python\\
+			JavaScript \\
+			C\#\\
+			C++
+
+			
+			SQL Server\\ 
+			AWS(S3, Lambda, Glue)\\
+			Android Development Studio\\ 
+			Node.js\\  Mocha\\ RHEL \\Raspian
+			\\AngularJS\\Powershell\\VB.NET
+			\end{multicols}
 						
 			\section{\sl\textbf{Work Experience}}
 			
@@ -68,7 +90,7 @@
 			{\it Capital One}, McLean, VA  & \hfill   5/19-8/19
 			\end{ncolumn}\\
 			Technology Internship Program - ATM Division \\
-			{\textit{\footnotesize{Technologies Used: Python, C++, Wireshark, XFS-CEN API}}}\\
+			%{\textit{\footnotesize{Technologies Used: Python, C++, Wireshark, XFS-CEN API}}}\\
 			Reverse Engineered USB Drivers for ATMs and wrote custom USB drivers. Created a script to run API calls from XFS-CEN API. Collected USB packets using the script from the ATM with Wireshark. Reverse engineered the USB signals to be able to run arbitrary code on the ATM and create custom drivers in Python. Wrote an automation testing framework for testing of all ATM hardware.
 			
 			
@@ -76,44 +98,52 @@
 			{\it Asurion}, Nashville, TN  & \hfill   5/18-7/18
 			\end{ncolumn}\\
 			Software Engineering Intern - Sub-billing Division\\
-			{\textit{\footnotesize{Technologies Used: Node.js, Python, Mocha, AWS, JavaScript}}}\\
+			%{\textit{\footnotesize{Technologies Used: Node.js, Python, Mocha, AWS, JavaScript}}}\\
 			Worked with back office transactions, streamlining account processing by creating internal tools in Node.js and Python. Created transaction records and histories for accounts by combining and inferring existing data. Wrote a unit test suite in Mocha for all of my tools and resolved critical issues in existing AWS applications. Led a team presenting a technical business case on new LOBs to executives at Asurion.
 			
 			\begin{ncolumn}{2}
 			{\it Innovative Systems}, Pittsburgh, PA  & \hfill   5/17-8/17
 			\end{ncolumn}\\
 			Software Engineering Intern - R\&D Division \\
-			{\textit{\footnotesize{Technologies Used: Java, VB.Net, SQL Server, Oracle}}}\\
-			Created tools used in the daily deployment of database updates and migrations. Converted several stored procedures into a more extensible format. Used industry software design practices and documentation. Envisioned and developed a cohesive product that is currently in production use. Using Visual Basic, SQL Server, Oracle and Java, the product took user instructions and ran through a complex procedure to transfer data.
+			%{\textit{\footnotesize{Technologies Used: Java, VB.Net, SQL Server, Oracle}}}\\
+			Created tools used in the daily deployment of database updates and migrations. Converted several stored procedures into a more extensible format. Used industry software design practices and documentation. Envisioned and developed a cohesive product that is currently in production use. Using VB.NET and Java, the product took user instructions and ran through a complex procedure to transfer data used in daily deployment.
 			
 			
 			\begin{ncolumn}{2} 
 			{\it The Ohio State University}, Columbus, OH & \hfill  4/16-11/16 
 			\end{ncolumn}\\
 			Student Information Technology Worker- Chemistry Department \\
-			{\textit{\footnotesize{Technologies Used: Powershell, Raspian, RedHat, Windows}}}\\
-			Created deployment packages for software across the department. Created scripts in Powershell deployed for use for software automation across the department. Worked with RHEL as a system admin and OS deployment, and Raspian for hardware and software deployment.
+			%{\textit{\footnotesize{Technologies Used: Powershell, Raspian, RedHat, Windows}}}\\
+			Created scripts in Powershell and Python deployed for use for software automation across the department. System Admin for RHEL and Raspian for hardware and software deployment.
 			
 
 			\section{\sl  \textbf{Software Projects}}
-			
-			\textit{Inter-collegiate Programming Competition}\\
+			\begin{ncolumn}{2} 
+			\textit{Inter-collegiate Programming Competition - ACM} & \hfill  2016-2019 
+			\end{ncolumn}\\
 			Competed in an algorithmic programming competition for college students. Represented Ohio State in the East Central Conference Event and placed in top half of participants.
 			
-			\textit{OHI/O Hackathon}\\
-			Created an Angular application that acts as a driving companion app for cars that tracks fuel efficiency and other metrics pulling from internal device components for a Honda challenge.
+			\begin{ncolumn}{2} 
+			\textit{OHI/O Hackathon} & \hfill  2015-2019 
+			\end{ncolumn}\\
+			Created an Angular application that acts as a driving companion app for cars that tracks fuel efficiency and other metrics pulling from internal device components for a Honda challenge. Application successfully built for cross platform usage, and derives statistics from kernel level calls.
 			
 			\textit{FIRST Robotics Team - Programming Division}\\
-			Worked as the lead programmer on the varsity robotics team. Used LabVIEW to create code for a robot that utilized a variety of mechanisms, such as pneumatics, CIMs, and real time field tracking using the Kinect.
-			The team advanced to the highest stage of the competition, and performed in the top half of the participants.
+%			Worked as the lead programmer on the varsity robotics team. Used LabVIEW to create code for a robot that utilized a variety of mechanisms, such as pneumatics, CIMs, and real time field tracking using the Kinect.
+			Worked as the lead programmer on the varsity robotics team. The team advanced to the highest stage of the competition, and performed in the top half of the participants.
 			
 			\textit{Unity3D Game Development}\\
-			{\textit{\footnotesize{Technologies Used: C\texttt{\#}, TypeScript}}}\\
+			%{\textit{\footnotesize{Technologies Used: C\texttt{\#}, TypeScript}}}\\
 			Developed several Unity3D games for Android, Windows and Web Browsers. One game was a platform side scroller, featuring unlimited tile generation and score keeping along with various powerups, each influencing the run of play. Ended with limited release on the title.
 			
 			\textit{Android Development}\\
-			{\textit{\footnotesize{Technologies Used: Android Studios, Java}}}\\
-			Developed several native Android applications as proof of concept ideas, or as learning tools. Applications created for hackathons.
+			%{\textit{\footnotesize{Technologies Used: Android Studios, Java}}}\\
+			Developed several native Android applications as proof of concept ideas, or as learning tools. Applications created for hackathons and personal usage to solve common inconveniences.
+			
+
+			
+
+
 
 	}
 		
